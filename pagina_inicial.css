@@ -1,0 +1,116 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+} 
+
+body { 
+    background-image: url("/imagens/fundo3.jpeg");
+    background-color: #eaf4ec;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex; 
+    flex-direction: column;   
+    align-items: center;      
+    min-height: 100vh;
+    padding: 40px 20px;       
+    gap: 20px;                
+} 
+
+.topo {
+    width: 100%;             
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.topo h1 {
+    font-size: 2.2rem;
+    color: #24252a;
+    background-color: #efa032;
+    padding: 12px 24px; 
+    border-radius: 50px; 
+    border: 3px solid #24252a; 
+    box-shadow: 4px 4px 0px #24252a;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.link {
+    color: #24252a;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+}
+
+.link:hover {
+    background-color: #24252a;
+    color: #ffffff;
+}
+
+.link.ativo {
+    border-color: #24252a;
+    background-color: rgba(152, 243, 152, 0.3);
+}
+
+.boas-vindas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.conteudo-inicio {
+    background-color: #f8f9fa;
+    border: 4px solid #24252a;
+    border-radius: 18px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 8px 8px 0px #24252a;
+}
+
+.conteudo-inicio h2 {
+    font-size: 1.8rem;
+    color: #24252a;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.conteudo-inicio p {
+    font-size: 1rem;
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.botao-jogar {
+    display: inline-block;
+    background-color: #efa032;
+    color: #24252a;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: 3px solid #24252a;
+    border-radius: 50px;
+    box-shadow: 4px 4px 0px #24252a;
+    transition: all 0.2s ease;
+}
+
+.botao-jogar:hover {
+    background-color: #24252a;
+    color: #ffffff;
+    box-shadow: 6px 6px 0px #efa032;
+    transform: translate(-2px, -2px);
+}
