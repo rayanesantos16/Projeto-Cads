@@ -7,95 +7,209 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div class="boas-vindas">
+        <section class="conteudo-inicio">
+            <h1>Bem-vindo ao Card Animal!</h1>
+            <p>Prepare-se para explorar, conhecer, apreciar algumas das criaturas mais fascinantes do planeta.</p>
+        </section>
+    </div> 
 
-     <header class="topo">
-        <h1>Catálogo dos Animais</h1>
+    <header class="topo">
         <nav class="menu">
-            <a href="pagina_inicial.html" class="link">Início</a>
-            <a href="index.html" class="link ativo">Animais</a>
+            <a href="index.html" class="link">Início</a>
         </nav>
     </header>
 
     <main class="container">
-
+        
         <!-- Panda-Gigante -->
-        <div class="box-card panda">
+        <section class="box-card panda">
             <article class="card">
                 <div class="frente">
-                    <div class="titulo">
+                    <header class="titulo">
                         <h1>Panda-Gigante</h1>
                         <p>Ailuropoda melanoleuca</p>
-                    </div>
-                    <div class="foto">
+                    </header>
+                    <figure class="foto">
                         <img src="imagens/panda.jpeg" alt="Panda-Gigante">
-                    </div>
-                    <p class="aviso">Passe o mouse para ver</p>
+                    </figure>
+                    <small class="aviso">Passe o mouse para ver</small>
                 </div>
                 <div class="verso">
                     <h2 class="subtitulo">Ficha Técnica</h2>
-                    <div class="lista">
-                        <div class="item"><span>Peso / Porte</span> <strong>160kg / 1,50m</strong></div>
-                        <div class="item"><span>Dieta</span> <strong>Bambu</strong></div>
-                        <div class="item"><span>População</span> <strong>1.900 na China</strong></div>
-                        <div class="item"><span>Território</span> <strong>China</strong></div>
-                        <div class="item"><span>Expectativa</span> <strong>30 anos</strong></div>
-                    </div>
+                    <dl class="lista">
+                        <div class="item"><dt>Peso / Porte</dt> <dd><strong>160kg / 1,50m</strong></dd></div>
+                        <div class="item"><dt>Dieta</dt> <dd><strong>Bambu</strong></dd></div>
+                        <div class="item"><dt>População</dt> <dd><strong>1.900 na China</strong></dd></div>
+                        <div class="item"><dt>Território</dt> <dd><strong>China</strong></dd></div>
+                        <div class="item"><dt>Expectativa</dt> <dd><strong>30 anos</strong></dd></div>
+                    </dl>
                 </div>
             </article>
-        </div>
+        </section>
 
         <!-- Tigre-siberiano -->
-        <div class="box-card tigre">
+        <section class="box-card tigre">
             <article class="card">
                 <div class="frente">
-                    <div class="titulo">
-                        <h1>Tigre-siberiano</h1>
+                    <header class="titulo">
+                        <h1>Tigre-siberiano</h1> 
                         <p>Panthera tigris altaica</p>
-                    </div>
-                    <div class="foto">
-                        <img src="/imagens/tigre.jpeg" alt="Tigre-siberiano">
-                    </div>
-                    <p class="aviso">Passe o mouse para ver</p>
+                    </header>
+                    <figure class="foto">
+                        <img src="imagens/tigre.jpeg" alt="Tigre-siberiano">
+                    </figure>
+                    <small class="aviso">Passe o mouse para ver</small>
                 </div>
                 <div class="verso">
                     <h2 class="subtitulo">Ficha Técnica</h2>
-                    <div class="lista">
-                        <div class="item"><span>Peso / Porte</span> <strong>180kg / 3,30m</strong></div>
-                        <div class="item"><span>Dieta</span> <strong>Predador</strong></div>
-                        <div class="item"><span>População</span> <strong>500 nat.</strong></div>
-                        <div class="item"><span>Território</span> <strong>Leste da Rússia</strong></div>
-                        <div class="item"><span>Expectativa</span> <strong>16 anos</strong></div>
-                    </div>
+                    <dl class="lista">
+                        <div class="item"><dt>Peso / Porte</dt> <dd><strong>180kg / 3,30m</strong></dd></div>
+                        <div class="item"><dt>Dieta</dt> <dd><strong>Predador</strong></dd></div>
+                        <div class="item"><dt>População</dt> <dd><strong>500 nat.</strong></dd></div>
+                        <div class="item"><dt>Território</dt> <dd><strong>Leste da Rússia</strong></dd></div>
+                        <div class="item"><dt>Expectativa</dt> <dd><strong>16 anos</strong></dd></div>
+                    </dl>
                 </div>
             </article>
-        </div>
+        </section>
 
         <!-- Cavalo Mustangue -->
-        <div class="box-card cavalo">
+        <section class="box-card cavalo">
             <article class="card">
-                <!-- Frente -->
                 <div class="frente">
-                    <div class="titulo">
-                        <h1>Cavalo Mustangue</h1>
+                    <header class="titulo">
+                        <h1>Cavalo Mustangue</h1> 
                         <p>Equus caballus</p>
-                    </div>
-                    <div class="foto">
-                        <img src="/imagens/cavalo.jpeg" alt="Cavalo Mustangue">
-                    </div>
-                    <p class="aviso">Passe o mouse para ver</p>
+                    </header>
+                    <figure class="foto">
+                        <img src="imagens/cavalo.jpeg" alt="Cavalo Mustangue correndo livre">
+                    </figure>
+                    <small class="aviso">Passe o mouse para ver</small>
                 </div>
                 <div class="verso">
                     <h2 class="subtitulo">Ficha Técnica</h2>
-                    <div class="lista">
-                        <div class="item"><span>Peso / Porte</span> <strong>400kg / 1,70m</strong></div>
-                        <div class="item"><span>Dieta</span> <strong>Herbívoro</strong></div>
-                        <div class="item"><span>População</span> <strong>70.000 nat.</strong></div>
-                        <div class="item"><span>Território</span> <strong>Nevada (EUA)</strong></div>
-                        <div class="item"><span>Expectativa</span> <strong>30 anos</strong></div>
-                    </div>
+                    <dl class="lista">
+                        <div class="item"><dt>Peso / Porte</dt> <dd><strong>400kg / 1,70m</strong></dd></div>
+                        <div class="item"><dt>Dieta</dt> <dd><strong>Herbívoro</strong></dd></div>
+                        <div class="item"><dt>População</dt> <dd><strong>70.000 nat.</strong></dd></div>
+                        <div class="item"><dt>Território</dt> <dd><strong>Nevada (EUA)</strong></dd></div>
+                        <div class="item"><dt>Expectativa</dt> <dd><strong>30 anos</strong></dd></div>
+                    </dl>
                 </div>
             </article>
+        </section>
+        <!--Tubarão Baleia-->
+             <section class="box-card tubarão">
+            <article class="card">
+                <div class="frente">
+                    <header class="titulo">
+                        <span class="trunfo">SUPER TRUNFO</span>
+                        <h1>Tubarão-Baleia</h1>
+                        <p>Rhincodon typus</p>
+                    </header>
+                    <figure class="foto">
+                        <img src="imagens/tubarão.jpeg" alt="tubarão">
+                    </figure>
+                    <small class="aviso">Passe o mouse para ver</small>
+                </div>
+                <div class="verso">
+                    <h2 class="subtitulo">Ficha Técnica</h2>
+                    <dl class="lista">
+                        <div class="item"><dt>Peso / Porte</dt> <dd><strong>34 toneladas / 20m</strong></dd></div>
+                        <div class="item"><dt>Dieta</dt> <dd><strong>Plâncton</strong></dd></div>
+                        <div class="item"><dt>População</dt> <dd><strong>200.000 nos oceanos</strong></dd></div>
+                        <div class="item"><dt>Território</dt> <dd><strong> não é um animal territorial</strong></dd></div>
+                        <div class="item"><dt>Expectativa</dt> <dd><strong>100 anos</strong></dd></div>
+                    </dl>
+                </div>
+            </article>
+        </section>
+            <!--coelho-->
+             <section class="box-card coelho">
+            <article class="card">
+                <div class="frente">
+                    <header class="titulo">
+                        <h1>Coelho Lion Red</h1>
+                        <p>Oryctolagus cuniculus.</p>
+                    </header>
+                    <figure class="foto">
+                        <img src="imagens/coelho.jpeg" alt="coelho">
+                    </figure>
+                    <small class="aviso">Passe o mouse para ver</small>
+                </div>
+                <div class="verso">
+                    <h2 class="subtitulo">Ficha Técnica</h2>
+                    <dl class="lista">
+                        <div class="item"><dt>Peso / Porte</dt> <dd><strong>1,3kg / 35cm</strong></dd></div>
+                        <div class="item"><dt>Dieta</dt> <dd><strong>Feno de Capim</strong></dd></div>
+                        <div class="item"><dt>População</dt> <dd><strong> 2,5 milhões</strong></dd></div>
+                        <div class="item"><dt>Território</dt> <dd><strong>Exclusivamente doméstico</strong></dd></div>
+                        <div class="item"><dt>Expectativa</dt> <dd><strong>10 anos</strong></dd></div>
+                    </dl>
+                </div>
+            </article>
+        </section>
+            <!-- Tabela Comparativa -->
+    <section class="tabela-secao">
+        <h2 class="tabela-titulo">Tabela Comparativa</h2>
+        <div class="tabela-responsiva">
+            <table class="tabela-animais">
+                <thead>
+                    <tr>
+                        <th>Animal</th>
+                        <th>Peso</th>
+                        <th>Porte/Comprimento</th>
+                        <th>Dieta</th>
+                        <th>População Global</th>
+                        <th>Expectativa de Vida</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <td class="animal-nome">🐴 Cavalo Mustangue</td>
+                        <td>400kg</td>
+                        <td>1,70m</td>
+                        <td>Herbívoro</td>
+                        <td>70.000</td>
+                        <td>30 anos</td>
+                    </tr>
+                    <tr>
+                        <td class="animal-nome">🐼 Panda-Gigante</td>
+                        <td>160kg</td>
+                        <td>1,50m</td>
+                        <td>Bambu</td>
+                        <td>1.900</td>
+                        <td>30 anos</td>
+                    </tr>
+                    <tr>
+                        <td class="animal-nome">🐯 Tigre-siberiano</td>
+                        <td>180kg</td>
+                        <td>3,30m</td>
+                        <td>Predador / Carnívoro</td>
+                        <td>500</td>
+                        <td>16 anos</td>
+                    </tr>
+                     <tr>
+                        <td class="animal-nome">🐳 Tubarão-Baleia <span class="trunfo">SUPER TRUNFO</span> </td>
+                        <td>34 toneladas</td>
+                        <td>20m</td>
+                        <td>Plâncton</td>
+                        <td>200.000</td>
+                        <td>100 anos</td>
+                    </tr>
+                     <tr>
+                        <td class="animal-nome">🐰Coelho Lion Red</td>
+                        <td>1,3kg</td>
+                        <td>35cm</td>
+                        <td>Feno de Capim</td>
+                        <td>2,5</td>
+                        <td>10 anos</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+    </section>
     </main>
 </body>
 </html>
+

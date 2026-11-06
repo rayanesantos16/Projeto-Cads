@@ -17,23 +17,23 @@ body {
     padding: 40px 20px;       
     gap: 20px;                
 } 
-
-.topo {
-    width: 100%;             
-    text-align: center;
+.boas-vindas {
+    width: 100%;
     max-width: 600px;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.topo h1 {
-    font-size: 2.2rem;
-    color: #24252a;
-    background-color: #efa032;
-    padding: 12px 24px; 
-    border-radius: 50px; 
-    border: 3px solid #24252a; 
-    box-shadow: 4px 4px 0px #24252a;
-    margin-bottom: 20px;
+.conteudo-inicio h1 {
+    font-size: 2.5rem;
+    color: #2a2824;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0px #ffffff;
+}
+
+.conteudo-inicio p {
+    font-size: 1.1rem;
+    color: #ffffff;
 }
 
 .menu {
@@ -43,23 +43,18 @@ body {
 }
 
 .link {
-    color: #24252a;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 700;
     padding: 8px 16px;
-    border: 2px solid transparent;
     border-radius: 20px;
     transition: all 0.2s ease;
+    background-color: #de6c08;
 }
 
 .link:hover {
     background-color: #24252a;
     color: #ffffff;
-}
-
-.link.ativo {
-    border-color: #24252a;
-    background-color: rgba(243, 162, 48, 0.3);
 }
 
 .container {
@@ -122,8 +117,8 @@ body {
     background-color: #f3f4f6;
     box-shadow: -8px 8px 0px #24252a;
 }
-.panda:hover .frente { box-shadow: 12px 12px 0px #24252a; }
-.panda:hover .verso { box-shadow: -12px 12px 0px #24252a; }
+.panda:hover .frente { box-shadow: 12px 12px 0px #303135; }
+.panda:hover .verso { background-image: url("imagens/fundo3.jpeg"); }
 .panda .item:hover { background-color: #e5e7eb; }
 
 /* Tigre */
@@ -136,7 +131,7 @@ body {
     box-shadow: -8px 8px 0px #ff8c00;
 }
 .tigre:hover .frente { box-shadow: 12px 12px 0px #ff8c00; }
-.tigre:hover .verso { box-shadow: -12px 12px 0px #ff8c00; }
+.tigre:hover .verso { background-image: url("imagens/fundo3.jpeg"); }
 .tigre .item:hover { background-color: #ffe4cc; }
 
 /* Cavalo */
@@ -149,12 +144,33 @@ body {
     box-shadow: -8px 8px 0px #b5651d;
 }
 .cavalo:hover .frente { box-shadow: 12px 12px 0px #b5651d; }
-.cavalo:hover .verso { box-shadow: -12px 12px 0px #b5651d; }
+.cavalo:hover .verso { background-image: url("imagens/fundo3.jpeg"); }
 .cavalo .item:hover { background-color: #ede0cc; }
 
-.titulo {
-    text-align: center;
+.tubarão .frente {
+    background-color: #faf7f2;
+    box-shadow: 8px 8px 0px #b5651d;
 }
+.tubarão .verso {
+    background-color: #f5efe6;
+    box-shadow: -8px 8px 0px #b5651d;
+}
+.tubarão:hover .frente { box-shadow: 12px 12px 0px #b5651d; }
+.tubarão:hover .verso { background-image: url("imagens/fundo3.jpeg"); }
+.tubarão .item:hover { background-color: #ede0cc; }
+
+.coelho .frente {
+    background-color: #faf7f2;
+    box-shadow: 8px 8px 0px #b5651d;
+}
+.coelho .verso {
+    background-color: #f5efe6;
+    box-shadow: -8px 8px 0px #b5651d;
+}
+.coelho:hover .frente { box-shadow: 12px 12px 0px #b5651d; }
+.coelho:hover .verso { background-image: url("imagens/fundo3.jpeg"); }
+.coelho .item:hover { background-color: #ede0cc; }
+
 
 .titulo h1 {
     font-size: 1.4rem;
@@ -186,6 +202,7 @@ body {
     border-radius: 12px;
     overflow: hidden;
     background-color: #e2ece7;
+    margin: 0; 
 }
 
 .foto img {
@@ -201,7 +218,7 @@ body {
     font-weight: 600;
 }
 
-.lista {
+dl.lista {
     display: flex;
     flex-direction: column;
     gap: 10px;            
@@ -220,12 +237,84 @@ body {
     transition: background-color 0.2s ease;
 }
 
-.item span {
+.item dt {
     font-weight: 700;
     color: #555;
 }
 
-.item strong {
+.item dd {
     font-weight: 800;
     color: #24252a;
+}
+
+.tabela-secao {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.tabela-titulo {
+    font-size: 1.8rem;
+    color: #24252a;
+    background-color: #efa032;
+    padding: 8px 20px;
+    border: 3px solid #24252a;
+    border-radius: 50px;
+    box-shadow: 4px 4px 0px #24252a;
+}
+
+.tabela-responsiva {
+    width: 100%;
+    overflow-x: auto; 
+    border: 4px solid #24252a;
+    border-radius: 16px;
+    box-shadow: 8px 8px 0px #24252a;
+}
+
+.tabela-animais {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+.tabela-animais th {
+    background-color: #24252a;
+    color: #ffffff;
+    padding: 14px 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.tabela-animais td {
+    padding: 14px 18px;
+    border-bottom: 2px solid #24252a;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.tabela-animais td.animal-nome {
+    font-weight: 800;
+    color: #24252a;
+    background-color: rgba(239, 160, 50, 0.1);
+}
+
+.trunfo {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 900;
+    color: #24252a;
+    background-color: #efa032;
+    padding: 3px 6px;
+    margin-left: 6px;
+    border: 2px solid #24252a;
+    border-radius: 80px;
+    box-shadow: 1px 1px 0px #24252a;
 }
